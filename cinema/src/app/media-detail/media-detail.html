@@ -1,0 +1,22 @@
+<div class="dettaglio-card">
+  
+  <img [src]="itemSelezionato.imageUrl" alt="Locandina di {{ itemSelezionato.titolo }}" class="locandina">
+  
+  <div class="info-testo">
+    <h2>{{ itemSelezionato.titolo }}</h2>
+    
+    <p><strong>Anno di uscita:</strong> {{ itemSelezionato.anno }}</p>
+    <p><strong>Durata:</strong> {{ itemSelezionato.durata }} minuti</p>
+    
+    <p><strong>Trama:</strong> {{ itemSelezionato.trama }}</p>
+    <p>
+      <strong>Stato:</strong>
+      @if (itemSelezionato.visto) {
+        ✅ Già visto
+      } @else {
+        ❌ Da vedere
+      }
+    </p>
+  </div>
+
+</div>

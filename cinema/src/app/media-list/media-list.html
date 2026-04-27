@@ -1,0 +1,28 @@
+<div class="media-container">
+  
+  @for (media of catalogo; track media.id) {
+    
+    <div class="media-card" (click)="seleziona(media)" style="cursor: pointer;">
+      
+      <h2>
+        @if (media.tipo === 'Film') {
+          <span>🎬</span>
+        } @else {
+          <span>📺</span>
+        }
+        {{ media.titolo }}
+      </h2>
+      
+      <p><strong>Regista:</strong> {{ media.regista }}</p>
+      
+    </div>
+
+  }
+
+</div>
+
+@if (elementoSelezionato) {
+  
+  <hr style="margin: 30px 0;"> <app-media-detail [itemSelezionato]="elementoSelezionato"></app-media-detail>
+
+}

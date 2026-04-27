@@ -1,0 +1,30 @@
+/* Contenitore principale della lista */
+.media-container {
+  display: flex;
+  flex-direction: column; /* Mette gli elementi uno sotto l'altro */
+  gap: 15px; /* Crea uno spazio vuoto di 15px tra una card e l'altra */
+  padding: 20px;
+  max-width: 600px; /* Evita che le card diventino troppo larghe schiacciate sui bordi dello schermo */
+}
+
+/* Stile del singolo elemento (Film o Serie TV) */
+.media-card {
+  border: 2px solid #daa520; /* Bordo dorato */
+  border-radius: 8px; /* Arrotonda leggermente gli angoli */
+  padding: 15px; /* Spazio tra il testo e il bordo della card */
+  background-color: #fffacd; /* Sfondo giallo chiaro */
+}
+
+/* Rimuove i margini di default del titolo per un aspetto più pulito */
+.media-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Stile per il testo del regista */
+.media-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #333333;
+}
